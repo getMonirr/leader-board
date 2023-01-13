@@ -1,9 +1,10 @@
 :root {
-    --website-background: #F3F1FF;
-    --section-background: #FFFFFF;
-    --primary-color: #562EFF;
-    --secondary-color: #000000;
-    --paragraph-color: #9F9F9F;
+  --website-background: #f3f1ff;
+  --section-background: #ffffff;
+  --primary-color: #562eff;
+  --secondary-color: #000000;
+  --paragraph-color: #9f9f9f;
+  --divider-color: #d1d1d1;
 }
 /* --------------------------------------------------------------------------------------------------
 
@@ -11,28 +12,106 @@
 
 -------------------------------------------------------------------------------------------------- */
 /* google font  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    max-width: 1440px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--website-background);
 }
 .container {
-    width: 100%;
-    max-width: 870px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+  background-color: var(--section-background);
+  padding: 30px;
+  border-radius: 5px;
+}
+hr {
+  margin: 30px 0;
+  border: 1px solid var(--divider-color);
 }
 /* --------------------------------------------------------------------------------------------------
 
                                         utilites style end
+
+-------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------------------
+
+                                        top Players and blogs section start
+
+-------------------------------------------------------------------------------------------------- */
+.players-section {
+    margin-top: 36px;
+}
+.section-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--primary-color);
+  margin-top: 3px;
+}
+.top-players {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+
+/* top blogs */
+.top-blogs {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 26px;
+  column-gap: 80px;
+}
+.blog {
+  display: flex;
+  gap: 16px;
+}
+.blog-thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.blog-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: var(--secondary-color);
+  margin-bottom: 6px;
+}
+.blog-author {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--paragraph-color);
+}
+.blog-author span {
+    color: var(--primary-color)
+}
+
+/* --------------------------------------------------------------------------------------------------
+
+                                        top Players and blogs section end
 
 -------------------------------------------------------------------------------------------------- */
