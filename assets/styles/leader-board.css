@@ -1,0 +1,38 @@
+:root {
+    --website-background: #F3F1FF;
+    --section-background: #FFFFFF;
+    --primary-color: #562EFF;
+    --secondary-color: #000000;
+    --paragraph-color: #9F9F9F;
+}
+/* --------------------------------------------------------------------------------------------------
+
+                                        utilites style start
+
+-------------------------------------------------------------------------------------------------- */
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 1440px;
+}
+.container {
+    width: 100%;
+    max-width: 870px;
+    margin: 0 auto;
+}
+/* --------------------------------------------------------------------------------------------------
+
+                                        utilites style end
+
+-------------------------------------------------------------------------------------------------- */
